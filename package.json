@@ -1,0 +1,23 @@
+{
+  "name": "somequeue",
+  "license": "BSD-3-Clause",
+  "version": "0.0.1",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "bee-queue": "^1.2.0",
+    "bluebird": "^3.5.0",
+    "wraplog": "^0.0.2"
+  },
+  "devDependencies": {
+    "mocha": "4.1.0"
+  },
+  "description": "Queues abstraction library",
+  "engines": {
+    "node": "6.9.1"
+  },
+  "repository": "https://github.com/faust64/somequeue",
+  "scripts": {
+    "release": "npm login && git push -u origin master && npm publish",
+    "test": "make test"
+  }
+}

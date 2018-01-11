@@ -1,0 +1,17 @@
+machine:
+  node:
+    version: 6.9.1
+  services:
+    - rabbitmq-server
+test:
+  override:
+    - make test
+  pre:
+    - sudo service redis-server stop || true
+    - sudo update-rc.d -f redis-server remove || true
+    - echo y | sudo add-apt-repository ppa:chris-lea/redis-server
+    - sudo apt-get update
+    - sudo apt-get install redis-server -yf --force-yes:
+      environment:
+        DEBIAN_FRONTEND: noninteractive
+    - sudo service redis-server restart
