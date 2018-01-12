@@ -57,7 +57,7 @@ module.exports = (topic, what, remoteHost, remotePort, dbId, logPw) => {
 					if (typeof data === 'string') {
 					    return self._scheduler.createJob({ what: self._topic, doparse: false, jobdata: data }).save()
 					} else {
-					    return self._scheduler.createJob({ what: self._topic, doparse: true, jobdata: JSON.stringify(data) }.save())
+					    return self._scheduler.createJob({ what: self._topic, doparse: true, jobdata: JSON.stringify(data) }).save()
 					}
 				    }
 			    });
