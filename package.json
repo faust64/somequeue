@@ -9,7 +9,7 @@
     "wraplog": "^0.0.2"
   },
   "devDependencies": {
-    "mocha": "4.1.0"
+    "mocha": "5.0.0"
   },
   "description": "Queues abstraction library",
   "engines": {
