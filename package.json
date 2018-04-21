@@ -9,7 +9,7 @@
   "devDependencies": {
     "amqplib": "^0.5.2",
     "bee-queue": "^1.2.0",
-    "mocha": "5.0.4"
+    "mocha": "5.1.1"
   },
   "description": "Queues abstraction library",
   "engines": {
